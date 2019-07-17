@@ -48,7 +48,7 @@ ENV PYTHONPATH $PYCAFFE_ROOT/py-faster-rcnn/caffe-fast-rcnn/python
 ENV PATH $CAFFE_ROOT/build/tools:$PYCAFFE_ROOT:$PATH
 RUN echo "$CAFFE_ROOT/build/lib" >> /etc/ld.so.conf.d/caffe.conf && ldconfig
 
-RUN pip install easydict opencv-python opencv-contrib-python pyquaternion plyfile joblib liblas
+RUN pip install easydict opencv-python opencv-contrib-python pyquaternion plyfile joblib liblas pypng
 
 WORKDIR /workspace
 

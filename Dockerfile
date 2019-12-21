@@ -63,5 +63,5 @@ ENV PYTHONPATH $PYCAFFE_ROOT/R-C3D/caffe3d/python
 ENV PATH $CADFFE_ROOT/R-C3D/caffe3d/build/tools:$PYCAFFE_ROOT:$PATH
 RUN pip install Cython==0.19.2 
 RUN pip install ez_setup
-#RUN pip install scipy==1.1.0 scikit-image==0.9.3 matplotlib==1.3.1 ipython==3.0.0 h5py==2.2.1 leveldb networkx==1.8.1 nose==1.3.0 pandas==0.12.0 python-dateutil==1.4 protobuf==2.5.0 python-gflags==2.0 pyyaml==3.10 Pillow==2.3.0   
+RUN pip install scipy==1.1.0 scikit-image==0.9.3 matplotlib==2.2.4 ipython==3.0.0 h5py leveldb networkx==1.8.1 nose==1.3.0 pandas==0.12.0 python-dateutil==1.4 protobuf==2.5.0 python-gflags==2.0 pyyaml==3.10 Pillow==2.3.0   
 WORKDIR /opt/caffe
